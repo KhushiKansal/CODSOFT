@@ -3,7 +3,7 @@
 import random
 
 class RuleBasedChatbot:
-    def _init_(self):
+    def __init__(self):
         self.responses = {
     "hello": ["Hello!", "Hi there!", "Hey!", "Hi!", "Greetings!", "Hey, how's it going?", "Hiya!", "Hey there!", "Hello, how can I assist you?", "Hey! What's up?", "Hello, nice to meet you!", "Hey, how are you doing?"],
     "how are you": ["I'm doing well, thank you!", "I'm fine, thanks for asking.", "I'm doing great!", "I'm okay, how about you?", "I'm feeling fantastic!", "I'm doing alright.", "I'm fabulous, thanks for asking!", "I'm splendid, thanks!", "I'm wonderful, how about yourself?", "I'm pretty good, thanks for asking.", "I'm great, thanks!", "I'm fantastic, how about you?", "I'm doing just fine, thanks!", "I'm doing awesome, thank you for asking!", "I'm peachy, thanks!"],
@@ -41,5 +41,5 @@ def main():
         else:
             print("ChatBot:", chatbot.respond(user_input))
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
